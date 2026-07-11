@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuroSil</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- GLOBAL BACKGROUND VIDEO -->
+    <video class="global-bg-video" autoplay muted loop playsinline>
+        <source src="bgf.mp4" type="video/mp4">
+    </video>
+
+    <!-- GLOBAL OVERLAY -->
+    <div class="global-overlay"></div>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="container">
+            <div class="logo">NeuroSil</div>
+
+            <nav>
+                <ul class="nav-links" id="navMenu">
+                    <li><a class="active" href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#products">Product</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                </ul>
+            </nav>
+
+            <a href="#contact" class="contact-btn">Contact us</a>
+
+            <!-- Mobile Menu Button -->
+            <div class="hamburger" id="hamburger">☰</div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+
+
+        <!-- DARK OVERLAY -->
+        <div class="overlay"></div>
+
+        <!-- CONTENT -->
+        <div class="hero-content">
+            <h1>Unmanned Ground Vehicle</h1>
+            <p>Meet your tireless helper — a ground robot ready for tough jobs so humans stay safe.</p>
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT SECTION -->
+    <section class="about-section" id="about">
+        <div class="about-container">
+
+            <!-- LEFT IMAGE -->
+            <div class="about-image">
+                <img src="robot.png" alt="About Image">
+            </div>
+
+            <!-- RIGHT CONTENT -->
+            <div class="about-content">
+                <h2>About</h2>
+
+                <p>
+                    UGV (Unmanned Ground Vehicles) is a robotics initiative focused on building intelligent land-based
+                    autonomous systems that enhance safety, efficiency, and innovation across industries.
+                </p>
+
+                <p>
+                    We specialize in creating robots powered by advanced sensors, AI, precise control
+                    systems, and modular designs—from firefighting robots to surveillance and automation.
+                </p>
+
+                <p>
+                    Our products—<b>UGV-Sathi</b> and <b>YAGYA</b>—represent our commitment to developing robotics
+                    solutions
+                    that serve society, industry, and emergency environments.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PRODUCTS SECTION -->
+    <section class="products-section" id="products">
+        <h1 class="products-heading">Products</h1>
+
+        <div class="products-container">
+
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="UGV_robot.jpg" alt="UGV SATHI">
+                <div class="product-title">UGV - SATHI</div>
+                <a href="Ugv.html" class="explore-btn">Explore</a>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="yagya_robot.jpg" alt="YAGYA">
+                <div class="product-title">YAGYA</div>
+                <a href="yagya.html" class="explore-btn">Explore</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ⭐ SERVICES SECTION (ADDED EXACTLY LIKE IMAGE) -->
+    <section class="services-section" id="services">
+        <h1 class="services-title">Services</h1>
+
+        <div class="services-grid">
+
+            <div class="service-box">
+                <h2>PCB Design & Development</h2>
+                <p>
+                    We design and develop high-quality PCBs, ensuring efficient electronic integration, reliable
+                    performance, and precise functionality for our projects.
+                </p>
+            </div>
+
+            <div class="service-box">
+                <h2>Custom Robotics Solutions</h2>
+                <p>
+                    We create tailored robotic platforms for industry, defense, agriculture, and emergency response.
+                    Our modular architecture enables seamless integration of sensors, tools, and mission-specific
+                    hardware.
+                </p>
+            </div>
+
+            <div class="service-box">
+                <h2>AI Robotics Development</h2>
+                <p>
+                    We develop intelligent robotic systems powered by AI, combining advanced algorithms, precise
+                    hardware, and seamless integration to deliver autonomous, efficient, and reliable solutions
+                </p>
+            </div>
+
+            <div class="service-box">
+                <h2>Smart Surveillance</h2>
+                <p>
+                    Advanced UGV-based surveillance with AI anomaly detection, 360° PTZ cameras, and encrypted
+                    communication
+                    for defense and public safety needs.
+                </p>
+            </div>
+
+            <div class="service-box">
+                <h2>Tech Support</h2>
+                <p>
+                    Full lifecycle support including maintenance, diagnostics, firmware upgrades, and hardware
+                    optimization.
+                </p>
+            </div>
+            <div class="service-box">
+                <h2>3D Designing</h2>
+                <p>
+                    We create detailed and realistic 3D models, bringing concepts to life with precision, creativity,
+                    and cutting-edge visualization techniques for projects and prototypes.
+                </p>
+            </div>
+            <div class="service-box">
+                <h2>Graphics Design</h2>
+                <p>
+                    We craft visually compelling designs that communicate ideas effectively, blending creativity and
+                    precision to enhance brand identity and project presentation
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="team-section" id="team">
+        <div class="team-content">
+            <h1>Meet Our Team</h1>
+
+            <div class="team-card-container">
+                <!-- Left arrow -->
+                <button class="arrow left" onclick="prevMember()">&#10094;</button>
+
+                <!-- Team Cards -->
+                <div class="team-card" id="teamCard">
+                    <div class="image-circle">
+                        <img src="profile1.jpg" alt="Team Member">
+                    </div>
+                    <h2 id="memberName">Mr. Deepkumar Gadhethariya</h2>
+                    <p id="memberRole">Founder</p>
+                    <div class="social-icons">
+                        <a id="memberLinkedIn" href="" target="_blank" class="linkedin-icon">𝗅𝗇
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+                <!-- Right arrow -->
+                <button class="arrow right" onclick="nextMember()">&#10095;</button>
+            </div>
+        </div>
+    </section>
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+
+            <!-- LEFT -->
+            <div class="contact-left">
+                <h1>Contact Us</h1>
+                <p>
+                    Interested in working together? Fill out some info and we will be in
+                    touch shortly.
+                </p>
+            </div>
+
+            <!-- RIGHT -->
+            <div class="contact-right">
+                <form id="contactForm">
+
+                    <label>Name <span>(required)</span></label>
+                    <div class="name-fields">
+                        <div>
+                            <label class="small-label">First Name</label>
+                            <input type="text" name="first_name" required>
+                        </div>
+
+                        <div>
+                            <label class="small-label">Last Name</label>
+                            <input type="text" name="last_name" required>
+                        </div>
+                    </div>
+
+                    <label>Email <span>(required)</span></label>
+                    <input type="email" name="email" required>
+
+                    <label>Message <span>(required)</span></label>
+                    <textarea name="message" rows="5" required></textarea>
+
+                    <button type="submit" class="send-btn">Send</button>
+
+                    <p id="formResponse"></p>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <!-- LEFT -->
+            <div class="footer-col">
+                <h2>Your Site Title</h2>
+                <p class="made-with">Made by</p>
+
+            </div>
+
+
+            <!-- CONTACT -->
+            <div class="footer-col">
+                <h3>Contact</h3>
+                <p>neurosil.ai.techno@gmail.com<br>9313971693</p>
+            </div>
+
+        </div>
+
+        <!-- Bottom Line -->
+        <div class="footer-bottom">
+            © 2025 Your Site Title — All Rights Reserved
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
